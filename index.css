@@ -1,0 +1,9 @@
+.dummy {
+    display: flex;
+    justify-content: center;
+}
+.dummy-img {
+    display: flex;
+    margin: auto;
+    width: 25%;
+}
