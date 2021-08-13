@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Gotham Rounded';
+    src: url('fonts/GothamRounded-Bold.woff2') format('woff2'),
+        url('fonts/GothamRounded-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham Rounded Book';
+    src: url('fonts/GothamRounded-Book.woff2') format('woff2'),
+        url('fonts/GothamRounded-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    display: grid;
+    width: auto;
+    height: auto;
+}
+
+.logo_main {
+    width: 10%;
+    margin: auto;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-items: center;
+    font-family: 'Gotham Rounded Book';
+    font-size: 32px;
+}
