@@ -1,0 +1,6 @@
+plugins:
+  - jekyll-redirect-from
+
+title: Configurator Link
+redirect_from: index.html
+redirect_to: https://scriptsqd.github.com/sqd-keyboards
