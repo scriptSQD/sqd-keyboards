@@ -17,6 +17,7 @@
 }
 
 body {
+    transform: scale(1);
     display: grid;
     width: auto;
     height: auto;
@@ -55,6 +56,20 @@ body::-webkit-scrollbar {
     color: black;
     grid-row: 1;
     z-index: 0;
+}
+
+.home, .config, .prod, .about {
+    margin-top: .2vw;
+    border: solid .1vw black;
+    color: black;
+    background-color: black;
+    width: 1.8vw;
+    transition: width .4s cubic-bezier(.15,.47,.36,1) .15s;
+}
+
+.home_text:hover ~ .home, .config_text:hover ~ .config,
+.product_text:hover ~ .prod, .aboutus_text:hover ~ .about {
+    width: 70%;
 }
 
 .main_contents {
