@@ -6,7 +6,6 @@
     font-style: normal;
     font-display: swap;
 }
-
 @font-face {
     font-family: 'Gotham Rounded Book';
     src: url('fonts/GothamRounded-Book.woff2') format('woff2'),
@@ -17,7 +16,7 @@
 }
 
 body {
-    transform: scale(1);
+    zoom: normal;
     display: grid;
     width: auto;
     height: auto;
@@ -29,15 +28,21 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+img {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
 .logo_main {
-    width: 8vw;
+    width: 6vw;
     margin: auto;
 }
 
 .menu {
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-top: 1vw;
+    margin-left: 26%;
+    margin-right: 26%;
+    margin-top: .5%;
     display: grid;
     grid-template-columns: repeat(4, auto);
     grid-template-rows: repeat(2, auto);
@@ -56,11 +61,12 @@ body::-webkit-scrollbar {
     color: black;
     grid-row: 1;
     z-index: 0;
+    transition: font-size .4s cubic-bezier(.15,.47,.36,1) .15s;
 }
 
 .home, .config, .prod, .about {
     margin-top: .2vw;
-    border: solid .1vw black;
+    border: solid 0.09vw black;
     color: black;
     background-color: black;
     width: 1.8vw;
@@ -72,19 +78,23 @@ body::-webkit-scrollbar {
     width: 70%;
 }
 
+.home_text:hover, .config_text:hover, .product_text:hover, .aboutus_text:hover {
+    font-size: 1.51vw;
+}
+
 .main_contents {
-    margin-top: 2.9vw;
+    margin-top: 1vw;
     display: grid;
     grid-template-rows: 1 auto;
     grid-template-columns: 1 auto;
     z-index: 0;
-    justify-items: center;
 }
 
 .mainbg {
     width: 100%;
     grid-column: 1;
     grid-row: 1;
+    z-index: 0;
 }
 
 .darkening {
@@ -93,5 +103,77 @@ body::-webkit-scrollbar {
     width: 100%;
     z-index: 1;
     background-color: black;
+    opacity: 45%;
+}
+
+.header_text {
+    grid-row: 1;
+    grid-column: 1;
+    z-index: 2;
+    color: white;
+    font-family: 'Gotham Rounded';
+    font-weight: bold;
+    margin-left: 8vw;
+    margin-top: 7vw;
+    letter-spacing: .35vw;
+    font-size: 2.5vw;
+}
+
+.underheader_text {
+    font-size: 2.5vw;
+    grid-row: 1;
+    grid-column: 1;
+    z-index: 2;
+    color: white;
+    font-family: 'Gotham Rounded Book';
+    margin-left: 9.5vw;
+    align-self: center;
+    letter-spacing: .15vw;
+}
+
+.paragraph_line {
+    grid-row: 1;
+    grid-column: 1;
+    z-index: 2;
+    margin-left: 8vw;
+    align-self: center;
+    height: 11.2vw;
+    rotate: 90deg;
+    background-color: white;
+    border: solid .15vw white;
+    border-radius: 1vw;
+}
+
+.signature {
+    grid-row: 1;
+    grid-column: 1;
+    color: white;
+    z-index: 2;
+    align-self: flex-end;
+    margin-bottom: 1vw;
+    margin-left: 2vw;
+    margin-right: auto;
+    display: grid;
+    grid-template-rows: repeat(2, min-content);
     opacity: 35%;
+}
+
+.shop_name {
+    grid-column: 1;
+    grid-row: 1;
+    position: relative;
+    font-family: 'Gotham Rounded';
+    font-weight: bold;
+    font-size: 1.6vw;
+    align-self: flex-end;
+}
+
+.authorship {
+    grid-column: 1;
+    grid-row: 2;
+    position: relative;
+    font-family: 'Gotham Rounded Book';
+    font-size: 1.11vw;
+    margin-bottom: 1vw;
+    text-align: end;
 }
