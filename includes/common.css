@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'Gotham Rounded';
+    src: url('fonts/GothamRounded-Bold.woff2') format('woff2'),
+        url('fonts/GothamRounded-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Gotham Rounded Book';
+    src: url('fonts/GothamRounded-Book.woff2') format('woff2'),
+        url('fonts/GothamRounded-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+/*
+html {
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+}
+*/
+body {
+    zoom: normal;
+    display: grid;
+    width: auto;
+    height: auto;
+    margin: 0;
+    margin-top: 1.2vw;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+img {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.logo_main {
+    width: 6vw;
+    margin: auto;
+}
+
+.menu {
+    margin: auto;
+    margin-top: .8vw;
+    display: grid;
+    grid-template-columns: 7vw 16vw 11vw 10vw;
+    column-gap: 1vw;
+    grid-template-rows: repeat(2, auto);
+    justify-items: center;
+    font-family: 'Gotham Rounded Book';
+    font-size: 1.75vw;
+    width: fit-content;
+}
+
+.menu a:link,
+.menu a:visited,
+.menu a:active {
+    text-decoration: none;
+}
+
+.menu a {
+    color: black;
+    grid-row: 1;
+    z-index: 0;
+    -webkit-transition: all .4s cubic-bezier(.15,.47,.36,1) .15s;
+    transition: all .4s cubic-bezier(.15,.47,.36,1) .15s;
+}
+
+.home, .config, .prod, .about {
+    margin-top: .2vw;
+    border: solid .07vw black;
+    background-color: black;
+    width: 2vw;
+    -webkit-transition: width .4s cubic-bezier(.15,.47,.36,1) .15s;
+    transition: width .4s cubic-bezier(.15,.47,.36,1) .15s;
+}
+
+.home_text:hover ~ .home, .config_text:hover ~ .config,
+.product_text:hover ~ .prod, .aboutus_text:hover ~ .about {
+    width: 90%;
+}
+
+.home_text:hover, .config_text:hover, .product_text:hover, .aboutus_text:hover {
+    -webkit-transform: scale(0.91);
+    transform:scale(0.91);
+}
