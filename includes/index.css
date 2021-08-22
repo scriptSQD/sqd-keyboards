@@ -1,13 +1,14 @@
 .main_contents {
     margin-top: 1vw;
     display: grid;
-    grid-template-rows: 1 auto;
-    grid-template-columns: 1 auto;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
     z-index: 0;
 }
 
 .mainbg {
     width: 100%;
+    height: 100%;
     grid-column: 1;
     grid-row: 1;
     z-index: 0;
@@ -16,53 +17,63 @@
 .darkening {
     grid-column: 1;
     grid-row: 1;
-    width: 100%;
+    width: auto;
+    height: auto;
     z-index: 1;
     background-color: black;
     opacity: 45%;
 }
 
-.header_text {
+.text-contents {
     grid-row: 1;
     grid-column: 1;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto min-content auto;
+    row-gap: 2vw;
+    align-items: center;
+}
+
+.header_text {
+    grid-column: 1;
+    grid-row: 1;
     z-index: 2;
     color: white;
     font-family: 'Gotham Rounded';
     font-weight: bold;
-    margin-left: 8vw;
-    margin-top: 7vw;
+    margin-left: 5vw;
+    margin-top: 2vw;
     letter-spacing: .35vw;
     font-size: 2.5vw;
 }
 
 .underheader_text {
-    font-size: 2.5vw;
-    grid-row: 1;
+    font-size: 2vw;
     grid-column: 1;
+    grid-row: 2;
     z-index: 2;
     color: white;
     font-family: 'Gotham Rounded Book';
-    margin-left: 9.5vw;
+    margin-left: 6.5vw;
     align-self: center;
     letter-spacing: .15vw;
 }
 
 .paragraph_line {
-    grid-row: 1;
     grid-column: 1;
+    grid-row: 2;
     z-index: 2;
-    margin-left: 8vw;
-    align-self: center;
-    height: 11.2vw;
-    rotate: 90deg;
+    margin-left: 5.3vw;
+    height: 100%;
+    transform: rotate(0deg);
     background-color: white;
     border: solid .15vw white;
     border-radius: 1vw;
 }
 
 .signature {
-    grid-row: 1;
     grid-column: 1;
+    grid-row: 3;
     color: white;
     z-index: 2;
     align-self: flex-end;
@@ -80,7 +91,7 @@
     position: relative;
     font-family: 'Gotham Rounded';
     font-weight: bold;
-    font-size: 1.2vw;
+    font-size: 1vw;
     align-self: flex-end;
 }
 
@@ -89,7 +100,14 @@
     grid-row: 2;
     position: relative;
     font-family: 'Gotham Rounded Book';
-    font-size: .9vw;
+    font-size: .7vw;
     margin-bottom: 5%;
     text-align: end;
+}
+
+.authorship a:link,
+.authorship a:visited,
+.authorship a:active {
+    text-decoration: none;
+    color: white;
 }

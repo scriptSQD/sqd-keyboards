@@ -14,17 +14,9 @@
     font-style: normal;
     font-display: swap;
 }
-/*
-html {
-    -webkit-transform: translateZ(0);
-    -moz-transform: translateZ(0);
-    -ms-transform: translateZ(0);
-    -o-transform: translateZ(0);
-    transform: translateZ(0);
-}
-*/
+
 body {
-    zoom: normal;
+    zoom: inherit;
     display: grid;
     width: auto;
     height: auto;
