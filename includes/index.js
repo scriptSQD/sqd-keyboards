@@ -7,5 +7,5 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
 console.log("Is mobile: " + isMobile);
 
 if (isMobile === true) {
-    document.getElementById('body').style.zoom(normal);
+    document.getElementById('body').style.zoom = normal;
 }
