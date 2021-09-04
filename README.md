@@ -10,7 +10,7 @@ That's why we are here! With our configurator (**WIP**), you will be able to cre
 Have fun and stay safe and sound. ♥
 
 # Status
-**Our resource is highly WIP right now.** We've just finished making the title page and are starting to design the configurator.  
+**Our resource is highly WIP right now.** We've just finished making the title page and are starting to design the configurator. Another good news is we just obtained or very own custom domain. From now on, you can acess us via comfortable [link](https://sqd-keyboards.xyz), which features Cloudflare DNS and security certificates!  
   
 At hte moment, you can watch the repository so you recieve updates on it. *We will move to branch "web" immediately, whenever the project is ready for production.* We will also try to provide our own domain, instead of GitHub's inconvenient one.  
   
