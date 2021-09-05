@@ -7,5 +7,6 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
 console.log("Is mobile: " + isMobile);
 
 if (isMobile === true) {
-    document.getElementById('body').style.zoom = normal;
+    document.getElementById('body').style.zoom = 1;
+    document.getElementById('body').style.fontSize = "90%";
 }
