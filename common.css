@@ -22,6 +22,7 @@ body {
     height: auto;
     margin: 0;
     margin-top: 1.2vw;
+    grid-template-rows: repeat(3, min-content);
 }
 
 body::-webkit-scrollbar {
